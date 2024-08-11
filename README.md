@@ -29,7 +29,10 @@ The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.
 2. Change num_in_channels from 12 to 6 in the dataset setup for train, val, and test
 3. Change the input_shape from (32,32,12) to (32,32,6) in the model
 
+## Run Jupyter Notebook to test subset base on fire size and fire spread speed
 
+1. Change the test dataset path for corresponding .tfrecords subset fire (see example in Unet_test_subset_of_dataset)
+2. Load h5 file and run test function
 
 ## References and Acknowledgements
 Our code is based on the following repositories, we thank the authors for their excellent contributions.
