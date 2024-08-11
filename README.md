@@ -7,14 +7,14 @@ The original Next Day Wildfire Spread dataset can be downloaded from [here](http
 The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.kaggle.com/datasets/bronteli/next-day-wildfire-spread-north-america-2012-2023).
 
 ## Run Jupyter Notebook for AttentionUnet, ResNet50 and Unet
-— Use Google colab
+1. Use Google colab
 ```
     from google.colab import drive
     drive.mount('/content/drive’)
 
     !pip install tensorflow==2.11.0 keras==2.11.0 tensorflow-addons==0.18.0 vit-keras==0.1.0 tensorflow-hub
 ``` 
-— Use condo environment (GPU Type: A100,CUDA Module: 11.7, Conda Module: anaconda3/2021.05)
+2. Use condo environment (GPU Type: A100,CUDA Module: 11.7, Conda Module: anaconda3/2021.05)
 ```
 
     !conda create -y -n myenv
