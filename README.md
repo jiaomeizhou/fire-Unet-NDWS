@@ -24,6 +24,12 @@ The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.
     !pip install tensorflow==2.11.0 keras==2.11.0 tensorflow-addons==0.18.0 vit-keras==0.1.0 tensorflow-hub
 ``` 
 
+## Run Jupyter Notebook to test 6 features
+1. Change  INPUT_FEATURES (e.g. INPUT_FEATURES = ['elevation', 'th', 'sph', 'pr', 'NDVI', 'PrevFireMask'])
+2. Change num_in_channels from 12 to 6 in the dataset setup for train, val, and test
+3. Change the input_shape from (32,32,12) to (32,32,6) in the model
+
+
 
 ## References and Acknowledgements
 Our code is based on the following repositories, we thank the authors for their excellent contributions.
