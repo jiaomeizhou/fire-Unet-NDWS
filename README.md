@@ -10,6 +10,7 @@ The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.
 1. Use Google colab
 ```
     from google.colab import drive
+
     drive.mount('/content/drive’)
 
     !pip install tensorflow==2.11.0 keras==2.11.0 tensorflow-addons==0.18.0 vit-keras==0.1.0 tensorflow-hub
@@ -31,11 +32,11 @@ The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.
 
 ## Run Jupyter Notebook to test subset base on fire size and fire spread speed
 
-1. Change the test dataset path for corresponding .tfrecords subset fire (see example in Unet_test_subset_of_dataset)
+1. Change the test dataset path for corresponding .tfrecords subset(find example in Unet_test_subset_of_dataset)
 2. Load h5 file and run test function
 
 ## References and Acknowledgements
-Our code is based on the following repositories, we thank the authors for their excellent contributions.
+Our code is based on the following links, we thank the authors for their excellent contributions.
 
 [Attention UNET and its Implementation in TensorFlow](https://idiotdeveloper.com/attention-unet-and-its-implementation-in-tensorflow/)
 
