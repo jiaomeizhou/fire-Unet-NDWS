@@ -8,28 +8,24 @@ The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.
 
 ## Run Jupyter Notebook for AttentionUnet, ResNet50 and Unet
 — Use Google colab
+    ```
     1. Upload dataset to cloud drive
     
     2. Load data from drive 
-    ```
     from google.colab import drive , drive.mount('/content/drive’)
-    ```
+   
     3. Install necessary packages
-    ```
     !pip install tensorflow==2.11.0 keras==2.11.0 tensorflow-addons==0.18.0 vit-keras==0.1.0 tensorflow-hub
     ``` 
 — Use condo environment (GPU Type: A100,CUDA Module: 11.7, Conda Module: anaconda3/2021.05)
-
+    ```
     1. Setup env 
-    ```
     !conda create -y -n myenv
-    ```
+  
     2. Active env
-     ```
-    conda activate myenv
-    ```
+     conda activate myenv
+    
     3. Install necessary packages
-    ```
     !pip install tensorflow==2.11.0 keras==2.11.0 tensorflow-addons==0.18.0 vit-keras==0.1.0 tensorflow-hub
     ``` 
 
