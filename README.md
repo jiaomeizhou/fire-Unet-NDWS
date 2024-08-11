@@ -43,6 +43,8 @@ Our code is based on the following repositories, we thank the authors for their 
 
 [Image segmentation with a U-Net-like architecture](https://keras.io/examples/vision/oxford_pets_image_segmentation/)
 
+[ResNet50 in TensorFlow using Keras API ](https://keras.io/api/applications/resnet/)
+
 [Swin U-net with Focal Modulation (ASUFM)](https://github.com/bronteee/fire-asufm?tab=readme-ov-file)
 
 [TransUNet](https://github.com/Beckschen/TransUNet)
