@@ -6,7 +6,7 @@ The original Next Day Wildfire Spread dataset can be downloaded from [here](http
 
 The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.kaggle.com/datasets/bronteli/next-day-wildfire-spread-north-america-2012-2023).
 
-The fire size and fire spread speed subset of dataset can be downloaded from [here](https://www.kaggle.com/datasets/zhiminv/next-day-wildfire-spread-subset-of-dataset/data).
+The fire size and fire spread speed subset of dataset can be downloaded from [here](https://www.kaggle.com/datasets/zhiminv/next-day-wildfire-spread-subset-of-dataset/data). The scripts for spliting dataset into subsets accoring to fire size and fire spread speed can be found at /Dataset.
 
 ## Run Jupyter Notebook for AttentionUnet, ResNet50 and Unet
 1. Use Google colab
@@ -48,6 +48,7 @@ mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/{MODEL_NAME}.npz
 ```
 
 2. Environment
+
 Under the TransUNet directory, please prepare an environment with python=3.7, and then use the command "pip install -r requirements.txt" for the dependencies.
 
 3. Train
