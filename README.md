@@ -39,7 +39,7 @@ The fire size and fire spread speed subset of dataset can be downloaded from [he
 
 ## TransUNet
 
-### 1. Download Google pre-trained ViT models
+1. Download Google pre-trained ViT models
 * [Get models in this link](https://console.cloud.google.com/storage/vit_models/): R50-ViT-B_16, ViT-B_16, ViT-L_16...
 ```bash
 wget https://storage.googleapis.com/vit_models/imagenet21k/{MODEL_NAME}.npz &&
@@ -47,15 +47,15 @@ mkdir ../model/vit_checkpoint/imagenet21k &&
 mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/{MODEL_NAME}.npz
 ```
 
-### 2. Environment
+2. Environment
 Under the TransUNet directory, please prepare an environment with python=3.7, and then use the command "pip install -r requirements.txt" for the dependencies.
 
-### 3. Train
+3. Train
 ```
 python main.py --dir_checkpoint checkpoints
 ```
 
-### 4. Test
+4. Test
 ```
 python evaluate.py --load_model checkpoints/{model_name}.pth
 ```
