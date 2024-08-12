@@ -6,7 +6,7 @@ The original Next Day Wildfire Spread dataset can be downloaded from [here](http
 
 The extended 2012-2023 dataset can be downloaded from Kaggle [here](https://www.kaggle.com/datasets/bronteli/next-day-wildfire-spread-north-america-2012-2023).
 
-The subset of datase base on fire size and fire spread speed  [here](https://www.kaggle.com/datasets/zhiminv/next-day-wildfire-spread-subset-of-dataset/data).
+The fire size and fire spread speed subset of dataset can be downloaded from [here](https://www.kaggle.com/datasets/zhiminv/next-day-wildfire-spread-subset-of-dataset/data).
 
 ## Run Jupyter Notebook for AttentionUnet, ResNet50 and Unet
 1. Use Google colab
