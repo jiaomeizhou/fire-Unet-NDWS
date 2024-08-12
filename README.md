@@ -61,6 +61,8 @@ python evaluate.py --load_model checkpoints/{model_name}.pth
 ```
 Replace {model_name} with your checkpoint name.
 
+You can download the pretrained TransUNet model we trained [here]( https://drive.google.com/file/d/1Pl42spMYTJ9ATkZz_9y-vHoD9AV0TDVh/view?usp=sharing).
+
 ## References and Acknowledgements
 Our code is based on the following links, we thank the authors for their excellent contributions.
 
