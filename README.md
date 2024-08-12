@@ -1,5 +1,5 @@
 # fire-Unet-NDWS
-Using Unet, TransUnet, AttentionUnet, etc. for Wild Fire Spread Prediction
+Using Unet, TransUnet, AttentionUnet, ResNet50 for Wild Fire Spread Prediction
 
 ## Data
 The original Next Day Wildfire Spread dataset can be downloaded from [here](https://www.kaggle.com/fantineh/next-day-wildfire-spread). 
@@ -36,6 +36,30 @@ The fire size and fire spread speed subset of dataset can be downloaded from [he
 
 1. Change the test dataset path for corresponding .tfrecords subset(find example in Unet_test_subset_of_dataset)
 2. Load h5 file and run test function
+
+## TransUNet
+
+### 1. Download Google pre-trained ViT models
+* [Get models in this link](https://console.cloud.google.com/storage/vit_models/): R50-ViT-B_16, ViT-B_16, ViT-L_16...
+```bash
+wget https://storage.googleapis.com/vit_models/imagenet21k/{MODEL_NAME}.npz &&
+mkdir ../model/vit_checkpoint/imagenet21k &&
+mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/{MODEL_NAME}.npz
+```
+
+### 2. Environment
+Under the TransUNet directory, please prepare an environment with python=3.7, and then use the command "pip install -r requirements.txt" for the dependencies.
+
+### 3. Train
+```
+python main.py --dir_checkpoint checkpoints
+```
+
+### 4. Test
+```
+python evaluate.py --load_model checkpoints/{model_name}.pth
+```
+Replace {model_name} with your checkpoint name.
 
 ## References and Acknowledgements
 Our code is based on the following links, we thank the authors for their excellent contributions.
